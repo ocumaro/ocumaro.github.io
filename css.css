@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: #F6E9D4;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: Rubik;
+}
+ul{
+    padding-top: 10px;
+    display: flex;
+    list-style-type: none;
+}
+li{
+    padding-right: 10px;
+    font-size: 16px;
+}
+.body{
+    font-family: Rubik;
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.body h1{
+    font-size: 50px;
+    padding-top: 100px;
+}
+.body .img{
+    height: 700px;
+    overflow: hidden;
+    
+}
+.body img{
+    height: 50%;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #F6E9D4;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  .linkstyle {
+    text-decoration: none;
+    color: inherit;
+    padding: 0px 20px ;
+  
+    position: relative; /* Required for positioning the underline */
+  }
+  .linkstyle::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust the value to control the distance between the text and the underline */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the value to control the underline thickness */
+    background-color: #00ADB5; /* Change the color to your desired underline color */
+    transform: scaleX(0); /* Initially, set the underline width to zero */
+    transition: transform 0.2s; /* Animation duration for the underline */
+    
+  }
+  
+  .linkstyle:hover::after {
+    transform: scaleX(1); /* Scale the underline to its full width on hover */
+  }
+  li a{
+    text-decoration: none;
+    color: inherit;
+  }
+  .hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}  
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+#Bio{
+    width: 900px;
+    font-family: Rubik;
+    color: gray;
+    margin-left: 200px;
+    margin-bottom: 300px;
+}
+#portfolio{
+    margin-left: 200px;
+    font-family: Rubik;
+
+    border-radius: 14px;
+}
+#portfolio p{
+    font-weight: bold;
+}
+#portfolio h1{
+   padding-top: 100px;
+   
+}
+.Ep{
+    justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100vh; /* Adjust the height as needed */
+  font-family: Rubik;
+  width: 700px;
+  margin-left: 300px;
+  margin-top: 100px
+}
+.Ep h1{
+    padding-bottom: 50px;
+}
+.Ep p{
+    letter-spacing: 3px;
+}
